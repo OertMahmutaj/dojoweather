@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header justify-between">
+        <h1>DojoWeather</h1>
+        <div class="cities justify-between">
+            <h2 id="burbank" onclick="displayAlert(this,'burbank')">Burbank</h2>
+            <h2 id="chicago" onclick="displayAlert(this,'chicago')">Chicago</h2>
+            <h2 id="dallas" onclick="displayAlert(this,'dallas')">Dallas</h2>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="temp-container justify-between">
+            <h2 id="current-city">San Jose</h2>
+            <div class="temp-converter justify-between">
+                <h3>show temperature in </h3>
+                <select name="temperature" id="temp">
+                    <option value="Celsius">°C</option>
+                    <option value="Fahrenheit">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="days-container justify-between">
+            <div class="tomorrow flex-column">
+                <h2>Today</h2>
+                <img id="today-icon" src="./assets/some_rain.png" alt="some_rain">
+                <h3 id="weather-description">some rain</h3>
+                <div class="temp-values justify-between">
+                    <h3><span id="max-temp">24</span>°</h3>
+                    <h3><span id="min-temp">18</span>°</h3>
+                </div>
+            </div>
+            <div class="tomorrow flex-column">
+                <h2>Tomorrow</h2>
+                <img src="./assets/some_rain.png" alt="some_rain">
+                <h3>some rain</h3>
+                <div class="temp-values justify-between">
+                    <h3><span>24</span>°</h3>
+                    <h3><span>18</span>°</h3>
+                </div>
+            </div>
+            <div class="Friday flex-column">
+                <h2>Friday</h2>
+                <img src="./assets/some_sun.png" alt="some_rain">
+                <h3>some rain</h3>
+                <div class="temp-values justify-between">
+                    <h3><span>24</span>°</h3>
+                    <h3><span>18</span>°</h3>
+                </div>
+            </div>
+            <div class="Saturday flex-column">
+                <h2>Saturday</h2>
+                <img src="./assets/some_clouds.png" alt="some_rain">
+                <h3>some rain</h3>
+                <div class="temp-values justify-between">
+                    <h3><span>24</span>°</h3>
+                    <h3><span>18</span>°</h3>
+                </div>
+            </div>
+        </div>
+        <div id="cookies" class="cookies-container justify-between">
+            <img src="./assets/cookie.png" alt="cookie-pic">
+            <div>
+                <h1>Stop! Cookie time</h1>
+                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque et aliquam obcaecati atque laudantium
+                    animi sapiente facilis, suscipit similique! <a
+                        href="https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/"
+                        target=”_blank”>Fugit?</a></h3>
+            </div>
+            <button onclick="acceptcookies(this,'cookies')">I Accept</button>
+        </div>
+    </div>
+    
+
+    <script src="./script.js">
+
+    </script>
+</body>
+
+</html>

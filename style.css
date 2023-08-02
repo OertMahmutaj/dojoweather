@@ -1,0 +1,93 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.justify-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eeeeee;
+}
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 15px;
+    background-color: white;
+}
+/* header */
+.header {
+    background-color: #9fc5f8;
+    color: white;
+    padding: 10px;
+    padding-right: 120px;
+    padding-left: 120px;
+    margin-bottom: 20px;
+}
+.cities >* {
+    margin-left: 20px;
+}
+.cities h2 {
+    cursor: pointer;
+}
+/* main-container */
+.main-container {
+    margin-right: 120px;
+    margin-left: 120px;
+    overflow: hidden;
+}
+/* temp-converter */
+.temp-converter>* {
+    margin-left: 10px;
+}
+select {
+    border: 2px solid black;
+}
+.temp-container {
+    border-bottom: 3px solid black;
+    margin-bottom: 20px;
+}
+.temp-values>* {
+    margin: 20px;
+}
+.temp-values h3:first-child {
+    color: #cf2a27;
+}
+.temp-values h3:last-child {
+    color: #2b78e4;
+}
+/* cookies */
+.cookies-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 98%;
+    padding: 10px;
+    background-color: #eeeeee;
+    border: 3px solid black;
+    margin: 5px;
+}
+.cookies-container img {
+    width: 80px;
+    height: 80px;
+}
+button {
+    border: 3px solid black;
+    background-color: #9fc5f8;
+    font-size: 18px;
+    font-weight: 600;
+    width: 120px;
+    box-shadow: 3px 3px 0px 0px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.cookies-container > * {
+    margin-left: 10px;
+} 
